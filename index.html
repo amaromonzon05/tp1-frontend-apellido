@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agencia de Viajes</h1>
+        <p>Descubrí nuevos destinos y experiencias</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Listado de viajes</h2>
+            <div id="lista-viajes"></div>
+        </section>
+
+        <section>
+            <h2>Nuestros guías</h2>
+            <div id="lista-guias"></div>
+        </section>
+
+        <section>
+            <h2>Buscar viajes</h2>
+            <input type="text" id="buscador-destino"
+                   placeholder="Ingresá un destino">
+
+            <select id="filtro-temporada">
+                <option value="">Todas las temporadas</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Filtrar guías por idioma</h2>
+            <select id="filtro-idioma">
+                <option value="">Todos los idiomas</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Portugués">Portugués</option>
+                <option value="Francés">Francés</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Registrar un viaje</h2>
+
+            <form id="formulario-viaje">
+
+                <input type="text" id="destino"
+                       placeholder="Destino" required>
+
+                <input type="date" id="fechaSalida" required>
+
+                <input type="number" id="precioBase"
+                       placeholder="Precio base" required>
+
+                <select id="temporada" required>
+                    <option value="">Seleccionar temporada</option>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+
+                <select id="guia_id" required>
+                    <option value="">Seleccionar guía</option>
+                </select>
+
+                <button type="submit">Registrar viaje</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
